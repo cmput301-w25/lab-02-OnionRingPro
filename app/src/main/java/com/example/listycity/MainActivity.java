@@ -67,9 +67,7 @@ public class MainActivity extends AppCompatActivity {
             String inputText = inputField.getText().toString().trim();
             if(inputText.isEmpty()){
                 Toast.makeText(MainActivity.this, "Please enter something", Toast.LENGTH_SHORT).show();
-                return;
-            }
-            if (inputButton.getTag().equals("ADD")){
+            } else if (inputButton.getTag().equals("ADD")){
                 dataList.add(inputText);
                 Toast.makeText(MainActivity.this, "City Added", Toast.LENGTH_SHORT).show();
             } else if (inputButton.getTag().equals("DELETE")){
